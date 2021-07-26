@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-weight: bold;
+            position: fixed;
+            width: 20%;
+            background-color: rgb(223, 222, 222);
+            height: 100%;
+        }
+
+        li a {
+            display: block;
+            text-decoration: none;
+            padding: 15px 20px;
+            color: white;
+        }
+
+        li.index {
+            background-color: salmon;
+        }
+
+        li.profile {
+            background-color: teal;
+        }
+
+        li.friend {
+            background-color: deepskyblue;
+        }
+
+        li a:hover {
+            background-color: black;
+        }
+
+        .container {
+            margin-left: 20%;
+            padding: 20px;
+            background-color: rgb(253, 239, 216);
+            height: 100vh;
+        }
+        h1 {
+            text-align: center;
+        }
+        img {
+            width: 500px;
+            height: 500px;
+            border: 3px dashed salmon;
+            border-radius: 20px;
+            box-shadow: 10px 10px 20px rgb(243, 159, 149);
+
+        }
+        .image {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            
+        }
+        div p {
+            margin-top: 30px;
+            font-size: 30px;
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+         <ul>
+            <li class="index"><a href="index.html">Index</a></li>
+            <li class="profile"><a href="profile.html">Profile</a></li>
+            <li class="friend"><a href="friends.html">Friends</a></li>
+         </ul>
+        <div class="container">
+            <h1>Waranchai Intahpanyo</h1>
+            <div class="image">
+            <img src="./img/profile.jpg" alt="">
+            </div>
+            <p>“Every day is a second chance.”</p>
+        </div>
+    </div>
+</body>
+
+</html>

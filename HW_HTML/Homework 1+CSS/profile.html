@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-weight: bold;
+            position: fixed;
+            width: 20%;
+            background-color: rgb(223, 222, 222);
+            height: 100%;
+        }
+
+        li a {
+            display: block;
+            text-decoration: none;
+            padding: 15px 20px;
+            color: white;
+        }
+
+        li.index {
+            background-color: salmon;
+        }
+
+        li.profile {
+            background-color: teal;
+        }
+
+        li.friend {
+            background-color: deepskyblue;
+        }
+
+        li a:hover:not(.active) {
+            background-color: black;
+        }
+
+        .container {
+            margin-left: 20%;
+            background-color: rgb(253, 239, 216);
+            height: 100vh;
+        }
+
+        /* .profile {
+            position: relative;
+        }
+        img {
+            width: 100%;
+            height: 50vh;
+            opacity: 0.7;
+        }
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 30px;
+        } */
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .container-about {
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 50px;
+            padding-top: 40px;
+            max-width: 1440px;
+            width: 100%;
+            justify-content: flex-start;
+        }
+
+        .about {
+            padding-left: 15px;
+            height: 20px;
+        }
+
+        .hobby {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .container-card {
+            background-color: rgb(185, 234, 253);
+            margin-top: -5px;
+            padding: 15px 0px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 10px 10px 20px skyblue;
+        }
+        .card h2 {
+            text-align: center;
+        }
+        .card img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 10px 0px 20px skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li class="index"><a href="index.html">Index</a></li>
+            <li class="profile"><a href="profile.html">Profile</a></li>
+            <li class="friend"><a href="friends.html">Friends</a></li>
+        </ul>
+        <div class="container">
+            <!-- <div class="profile">
+            <img src="./img/profile5.jpg" alt="">
+            <div class="center">นายวรัญชัย อินต๊ะปัญโญ</div>
+        </div> -->
+            <div class="container-about">
+                <img src="./img/profile2.jpg" alt="">
+                <div class="about">
+                    <h1>ABOUT</h1>
+                    <p>ชื่อ: นายวรัญชัย อินต๊ะปัญโญ ชื่อเล่น: แอนดริว</p>
+                    <p>ความถนัด: คอมพิวเตอร์ งานอดิเรก: อ่านหนังสือ</p>
+                    <p>ภูมิลำเนา: กำแพงเพชร โทร: 065-593-8569</p>
+                </div>
+            </div>
+            <h1 style="text-align: center; margin-top: 30px;">Hobby</h1>
+            <div class="hobby">
+                <div class="card">
+                    <img src="./img/hobby1.jpg" alt="">
+                    <div class="container-card">
+                        <h2>"Read Book"</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/hobby3.jpg" alt="">
+                    <div class="container-card">
+                        <h2>"Play game"</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/hobby2.jpg" alt="">
+                    <div class="container-card">
+                        <h2>"Listen music"</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
