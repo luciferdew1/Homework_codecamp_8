@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Form</title>
+</head>
+<style>
+    * {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+    }
+    form {
+        border: 2px solid red;
+        border-radius: 15px;
+        padding: 10px;
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 220px;
+        align-content: flex-start;
+    }
+
+    .width150 select {
+        box-sizing: border-box;
+        width: 130px;
+        height: 30px;
+        opacity: 0.7;
+    }
+
+    .inputbox input {
+        box-sizing: border-box;
+        width: 130px;
+        height: 30px;
+        opacity: 0.7;
+    }
+
+    .width150 {
+        width: 150px;
+    }
+
+    .inputbox {
+        width: 150px;
+        padding-top: 10px;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        opacity: 1;
+    }
+
+    .inputnumber {
+        width: 50px;
+        padding-top: 10px;
+    }
+
+    .inputnumber input {
+        box-sizing: border-box;
+        opacity: 0.7;
+        width: 60px;
+        display: block;
+        height: 30px;
+    }
+    .mr20 {
+        margin-right: 25px;
+    }
+    .currency select {
+        box-sizing: border-box;
+        width: 60px;
+        height: 30px;
+        opacity: 0.7;
+    }
+    .button input {
+        margin-top: 20px;
+        background-color: rgb(250, 137, 37);
+        color: white;
+        width: 80px;
+        height: 35px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 12px;
+    }
+</style>
+
+<body>
+    <h1>FORM HOMEWORK</h1>
+    <form action="">
+        <div class="width150">
+            <label for="flight-from">Flying from</label>
+            <select id="flight-from" name="flight-from" style="display: block;">
+                <option value="phuket">Phuket</option>
+                <option value="bangkok">Bangkok</option>
+                <option value="chiangmai">Chiangmai</option>
+                <option value="roied">Roi ed</option>
+            </select>
+        </div>
+        <div class="width150">
+            <label for="flight-to">To</label>
+            <select id="flight-to" name="flight-to" style="display: block;">
+                <option value="phuket">Phuket</option>
+                <option value="bangkok" selected>Bangkok</option>
+                <option value="chiangmai">Chiangmai</option>
+                <option value="roied">Roi ed</option>
+            </select>
+        </div>
+        <div class="inputbox">
+            <label for="departing">Departing</label>
+            <input type="date" id="departing" name="departing" value="2020-12-12" style="display: block;">
+            </select>
+        </div>
+        <div class="inputbox">
+            <label for="returning">Returning</label>
+            <input type="date" id="returning" name="returning" style="display: block;">
+            </select>
+        </div>
+        <div class="inputnumber mr20">
+            <label for="adult">Adult</label>
+            <input type="number" min="1" value="1">
+            </select>
+        </div>
+        <div class="inputnumber mr20">
+            <label for="Child">Child</label>
+            <input type="number" min="0" value="0">
+            </select>
+        </div>
+        <div class="inputnumber mr20">
+            <label for="infant">Infant</label>
+            <input type="number" min="0" value="0">
+            </select>
+        </div>
+        <div class="inputnumber currency">
+            <label for="currency">Currency</label>
+            <select id="currency" name="currency" style="display: block;">
+                <option value="dollar">USD</option>
+                <option value="bath" selected>THB</option>
+                <option value="yen">JPY</option>
+            </select>
+        </div>
+        <div class="button">
+            <input type="button" value="Search">
+        </div>
+    </form>
+</body>
+
+</html>
